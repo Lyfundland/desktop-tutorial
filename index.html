@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Style Homme</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #111;
+            color: white;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: black;
+            box-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+
+        header h1 {
+            color: gold;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: gold;
+        }
+
+        /* HERO */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(black, #333);
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            color: gold;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 10px 30px;
+            border: none;
+            background: gold;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: white;
+        }
+
+        /* PRODUITS */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            background: gold;
+            color: black;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+        }
+
+        /* RESPONSIVE 📱 */
+        @media(max-width: 768px){
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Style Homme</h1>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Produits</a>
+        <a href="#">Gros</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Nouvelle Collection 2026</h2>
+    <p>Vêtements homme en détail et en gros</p>
+    <button>Acheter maintenant</button>
+</section>
+
+<section class="products">
+    <div class="card">
+        <h3>T-shirt</h3>
+        <p>Prix détail: 80 MAD</p>
+        <p>Prix gros: 60 MAD</p>
+    </div>
+
+    <div class="card">
+        <h3>Jeans</h3>
+        <p>Prix détail: 200 MAD</p>
+        <p>Prix gros: 150 MAD</p>
+    </div>
+
+    <div class="card">
+        <h3>Chemise</h3>
+        <p>Prix détail: 150 MAD</p>
+        <p>Prix gros: 120 MAD</p>
+    </div>
+</section>
+
+<footer>
+    <p>Contact: 06 XX XX XX XX</p>
+</footer>
+
+</body>
+</html>
